@@ -1,13 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Esercizi ripasso</title>
 </head>
+
 <body>
-    
+
+    <h1>Esercizi di ripasso</h1>
+    <div id="div-buttons-home">
+        <button id="btn-contatore">Contatore caratteri in tempo reale</button>
+        <button id="btn-spesa">Lista spesa</button>
+        <button id="btn-ristorante">Prenotazione ristorante</button>
+    </div>
+
+    <div id="div-contatore" class="div_nascosto">
+        <span>Inserisci la parola <input type="text" id="input-cont" placeholder="Inserisci la parola (max 25 caratteri)"> </span>
+        <span id="contatore-span">25</span>
+    </div>
+
+    <div id="div-spesa" class="div_nascosto">
+        spesa
+    </div>
+
+    <div id="div-ristorante" class="div_nascosto">
+        
+        <form action="" id="form-ristorante">
+            <input type="text" id="nome" placeholder="nome"><br>
+            <input type="text" id="cognome" placeholder="cognome"><br>
+            <input type="text" id="cell" placeholder="numero telefono"><br>
+            <input type="number" id="npersone" placeholder="numero persone"><br>
+            <input type="date" id="data" placeholder="data"><br>
+            <input type="time" id="orario" placeholder="orario"><br>
+            <input type="text" id="noteagg" placeholder="note aggiuntive"><br><br>
+
+            <button type="submit" id="btn-prenota">PRENOTA</button>
+        </form>
+
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
+
+<!--
+Es. 1 Contatore caratteri in tempo reale 
+Obiettivo: digitando in un <input> di una form, mostrare quanti caratteri mancano al limite della textbox.
+
+Es. 2) Lista spesa con aggiunta/rimozione (localStorage)
+
+Es. 3 Realizza una pagina web che permetta agli utenti di prenotare un tavolo in un ristorante.
+Crea un form con i seguenti campi:
+Nome e cognome (input text, obbligatorio)
+Numero di telefono (input text, obbligatorio, solo numeri)
+Numero di persone (input number, minimo 1, massimo 20)
+Data della prenotazione (input date, non date passate)
+Orario della prenotazione (input time, fascia 12:00 – 23:00)
+Note aggiuntive (textarea, facoltativo)
+Pulsante "Prenota"
+
+CSS (facoltativo ma consigliato)
+Applica uno stile semplice per rendere leggibile il form.
+
+JavaScript
+Valida i campi del form:
+Nome e telefono non possono essere vuoti.
+Il numero di telefono deve contenere solo cifre.
+La data deve essere oggi o successiva.
+L’orario deve rientrare tra le 12:00 e le 23:00
+Se i dati sono validi, mostra un messaggio di conferma della prenotazione sotto il form.
+Se i dati non sono validi, mostra un messaggio di errore accanto al campo corrispondente.
+Extra:
+Salvare i dati della prenotazione in localStorage.
+Mostrare un riepilogo delle ultime prenotazioni effettuate.
+-->

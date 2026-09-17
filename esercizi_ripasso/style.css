@@ -1,0 +1,127 @@
+/* Sfondo della pagina */
+body {
+    background-color: #172554;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+
+    /* Centra il contenuto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Titolo */
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+/* Contenitore dei bottoni */
+#div-buttons-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Bottoni */
+#div-buttons-home button {
+    background-color: #38bdf8;
+    color: #172554;
+    border: none;
+    border-radius: 8px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    padding: 15px 25px;
+    min-width: 300px;
+
+    cursor: pointer;
+}
+
+/* Effetto quando passi sopra con il mouse */
+#div-buttons-home button:hover {
+    background-color: #7dd3fc;
+}
+
+
+.div_attivo,
+.div_nascosto {
+    margin-top: 40px;
+    padding: 25px;
+    border-radius: 12px;
+    background-color: #1e3a8a;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.div_attivo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    color: white;
+    font-size: 18px;
+}
+
+.div_nascosto {
+    display: none;
+}
+
+
+
+#input-cont {
+    margin-left: 10px;
+    padding: 10px 12px;
+    border: 2px solid #38bdf8;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    width: 260px;
+}
+#input-cont:focus {
+    border-color: #7dd3fc;
+}
+#contatore-span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #7dd3fc;
+}
+
+
+
+#form-ristorante {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#form-ristorante input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 8px;
+    border: 2px solid #38bdf8;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+#form-ristorante input:focus{
+    border-color: #7dd3fc;
+}
+#btn-prenota {
+    padding: 8px 15px;
+    background-color: #38bdf8;
+    color: #172554;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#btn-prenota:hover {
+    background-color: #7dd3fc;
+}
